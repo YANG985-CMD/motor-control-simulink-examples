@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "mode": "Simulink model-reference SIL, top-model ERT code",
+  "cases": {
+    "standstill": {
+      "samples": 44001,
+      "max_angle_deg": 0.00023905662095044628,
+      "max_speed_rpm": 0.025966783957223932,
+      "max_injected_voltage_v": 1.4424324035644531E-5
+    },
+    "injection_off": {
+      "samples": 44001,
+      "max_angle_deg": 0,
+      "max_speed_rpm": 0,
+      "max_injected_voltage_v": 0
+    },
+    "current_noise": {
+      "samples": 44001,
+      "max_angle_deg": 1.3660378340025505E-5,
+      "max_speed_rpm": 0.00028402203298636357,
+      "max_injected_voltage_v": 9.5367431640625E-7
+    },
+    "low_speed": {
+      "samples": 44001,
+      "max_angle_deg": 0.00065569816032122409,
+      "max_speed_rpm": 0.026041234575535283,
+      "max_injected_voltage_v": 4.1484832763671875E-5
+    },
+    "high_speed": {
+      "samples": 44001,
+      "max_angle_deg": 0.00013660378340025502,
+      "max_speed_rpm": 0.0046627424733953716,
+      "max_injected_voltage_v": 9.5367431640625E-6
+    },
+    "high_without_d_feedforward": {
+      "samples": 44001,
+      "max_angle_deg": 0.00010928302672020404,
+      "max_speed_rpm": 0.0031202580858341582,
+      "max_injected_voltage_v": 7.5995922088623047E-6
+    },
+    "opposite_polarity": {
+      "samples": 44001,
+      "max_angle_deg": 3.2443398557560559E-5,
+      "max_speed_rpm": 0.0060333115331558922,
+      "max_injected_voltage_v": 2.2649765014648438E-6
+    }
+  }
+}

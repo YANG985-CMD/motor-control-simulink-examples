@@ -1,0 +1,136 @@
+{
+  "status": "pass",
+  "target": "ERT C99",
+  "compiler": "gcc.exe (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 13.1.0",
+  "sample_period_s": 2.5e-05,
+  "identical_input_window_s": [
+    0,
+    0.04
+  ],
+  "total_replay_ticks": 11207,
+  "tolerances": {
+    "angle_deg": 0.1,
+    "speed_mechanical_rpm": 1,
+    "other_outputs_native_units": 0.02
+  },
+  "source_sha256": {
+    "Corley_HFI_Observer.c": "577fc096c4f0b8388e031edc5a582fc2f9f5c21a9dda1d2337ef6a6d7abb3395",
+    "rtGetNaN.c": "ab3aba9eace24d4d4bf9d80ba69125bed379a6915500961422cb1d8e4d82649c",
+    "rt_nonfinite.c": "0ff289e4a0e3b496daea37ef1f2182e6bf490314740e1ae126f1b974288ce71c"
+  },
+  "cases": {
+    "standstill": {
+      "samples": 1601,
+      "max_angle_error_deg": 0.0,
+      "max_speed_error_mechanical_rpm": 9.106918893350335e-06,
+      "max_abs_other_outputs": {
+        "InjectAlpha_V": 2.384185791015625e-07,
+        "InjectBeta_V": 2.384185791015625e-07,
+        "IDProjected_A": 2.9802322387695312e-08,
+        "IDCarrier_A": 4.842877388000488e-08,
+        "Mixed_A": 3.725290298461914e-08,
+        "AngleResidual": 8.940696716308594e-08,
+        "CarrierReference": 5.960464477539063e-08,
+        "IQProjected_A": 2.9802322387695312e-08,
+        "LoadTorqueEstimate_Nm": 1.1920928955078125e-07
+      }
+    },
+    "injection_off": {
+      "samples": 1601,
+      "max_angle_error_deg": 0.0,
+      "max_speed_error_mechanical_rpm": 0.0,
+      "max_abs_other_outputs": {
+        "InjectAlpha_V": 0.0,
+        "InjectBeta_V": 0.0,
+        "IDProjected_A": 0.0,
+        "IDCarrier_A": 0.0,
+        "Mixed_A": 0.0,
+        "AngleResidual": 0.0,
+        "CarrierReference": 5.960464477539063e-08,
+        "IQProjected_A": 0.0,
+        "LoadTorqueEstimate_Nm": 0.0
+      }
+    },
+    "current_noise": {
+      "samples": 1601,
+      "max_angle_error_deg": 2.0490567510038253e-05,
+      "max_speed_error_mechanical_rpm": 0.0002914214045872107,
+      "max_abs_other_outputs": {
+        "InjectAlpha_V": 7.152557373046875e-07,
+        "InjectBeta_V": 1.430511474609375e-06,
+        "IDProjected_A": 1.4156103134155273e-07,
+        "IDCarrier_A": 1.1920928955078125e-07,
+        "Mixed_A": 1.1175870895385742e-07,
+        "AngleResidual": 3.725290298461914e-07,
+        "CarrierReference": 5.960464477539063e-08,
+        "IQProjected_A": 5.960464477539063e-08,
+        "LoadTorqueEstimate_Nm": 1.430511474609375e-06
+      }
+    },
+    "low_speed": {
+      "samples": 1601,
+      "max_angle_error_deg": 0.0,
+      "max_speed_error_mechanical_rpm": 9.106918893350335e-06,
+      "max_abs_other_outputs": {
+        "InjectAlpha_V": 2.384185791015625e-07,
+        "InjectBeta_V": 2.384185791015625e-07,
+        "IDProjected_A": 2.9802322387695312e-08,
+        "IDCarrier_A": 4.842877388000488e-08,
+        "Mixed_A": 3.725290298461914e-08,
+        "AngleResidual": 8.940696716308594e-08,
+        "CarrierReference": 5.960464477539063e-08,
+        "IQProjected_A": 2.9802322387695312e-08,
+        "LoadTorqueEstimate_Nm": 1.1920928955078125e-07
+      }
+    },
+    "high_speed": {
+      "samples": 1601,
+      "max_angle_error_deg": 0.0,
+      "max_speed_error_mechanical_rpm": 9.106918893350335e-06,
+      "max_abs_other_outputs": {
+        "InjectAlpha_V": 2.384185791015625e-07,
+        "InjectBeta_V": 2.384185791015625e-07,
+        "IDProjected_A": 2.9802322387695312e-08,
+        "IDCarrier_A": 4.842877388000488e-08,
+        "Mixed_A": 3.725290298461914e-08,
+        "AngleResidual": 8.940696716308594e-08,
+        "CarrierReference": 5.960464477539063e-08,
+        "IQProjected_A": 2.9802322387695312e-08,
+        "LoadTorqueEstimate_Nm": 1.1920928955078125e-07
+      }
+    },
+    "high_without_d_feedforward": {
+      "samples": 1601,
+      "max_angle_error_deg": 0.0,
+      "max_speed_error_mechanical_rpm": 1.821383778670067e-05,
+      "max_abs_other_outputs": {
+        "InjectAlpha_V": 2.384185791015625e-07,
+        "InjectBeta_V": 2.384185791015625e-07,
+        "IDProjected_A": 2.9802322387695312e-08,
+        "IDCarrier_A": 4.470348358154297e-08,
+        "Mixed_A": 2.2351741790771484e-08,
+        "AngleResidual": 1.1920928955078125e-07,
+        "CarrierReference": 5.960464477539063e-08,
+        "IQProjected_A": 5.960464477539063e-08,
+        "LoadTorqueEstimate_Nm": 3.5762786865234375e-07
+      }
+    },
+    "opposite_polarity": {
+      "samples": 1601,
+      "max_angle_error_deg": 0.0,
+      "max_speed_error_mechanical_rpm": 1.3570366640911006e-13,
+      "max_abs_other_outputs": {
+        "InjectAlpha_V": 1.1920928955078125e-07,
+        "InjectBeta_V": 2.384185791015625e-07,
+        "IDProjected_A": 0.0,
+        "IDCarrier_A": 0.0,
+        "Mixed_A": 4.440892098500626e-16,
+        "AngleResidual": 1.7763568394002505e-15,
+        "CarrierReference": 5.960464477539063e-08,
+        "IQProjected_A": 0.0,
+        "LoadTorqueEstimate_Nm": 4.440892098500626e-16
+      }
+    }
+  },
+  "validation_scope": "host build and identical-input startup replay"
+}

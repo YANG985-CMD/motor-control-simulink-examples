@@ -1,0 +1,12 @@
+{
+  "Corley_HFI_Observer": {
+    "checked_scopes": 10,
+    "overlaps": 0,
+    "findings": []
+  },
+  "Corley_IPMSM_HFI_Bench": {
+    "checked_scopes": 13,
+    "overlaps": 0,
+    "findings": []
+  }
+}
