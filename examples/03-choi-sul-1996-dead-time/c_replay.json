@@ -1,0 +1,26 @@
+{
+  "result": "pass",
+  "compiler": "gcc.exe (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 13.1.0",
+  "foc_host_compile": "pass",
+  "kernel_source_sha256": {
+    "PWM_DT_Comp.c": "11ceebbb2c8e0cc47b49a5a360ae0d5cc1d57e2111321ccd3b068c122fd2c65a"
+  },
+  "runs": {
+    "baseline": {
+      "cycles": 9000,
+      "maximum_absolute_error_by_phase": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "compensated": {
+      "cycles": 9000,
+      "maximum_absolute_error_by_phase": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

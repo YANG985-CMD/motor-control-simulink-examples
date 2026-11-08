@@ -1,0 +1,67 @@
+{
+  "motor": {
+    "R": 0.065,
+    "Ld": 0.001875,
+    "Lq": 0.00375,
+    "Psi": 0.045,
+    "Pairs": 4,
+    "Vdc": 86.602540378443862,
+    "Ts": 0.0001,
+    "h": 1E-6
+  },
+  "electrical_nominal_Hz": 20,
+  "target_rpm": 300,
+  "deadtime_us": 3,
+  "load_Nm": 0.7,
+  "calibration_window_s": [
+    0.34,
+    0.49
+  ],
+  "evaluation_window_s": [
+    0.55,
+    0.88
+  ],
+  "thd_orders": [
+    2,
+    25
+  ],
+  "calibration": {
+    "window_s": [
+      0.34,
+      0.49
+    ],
+    "samples": 671,
+    "equivalent_error_V": 2.3102312184948905,
+    "duty": 0.026676252317766044,
+    "equivalent_us": 2.6676252317766047,
+    "fit_rmse_V": 0.623320791986717
+  },
+  "baseline": {
+    "voltage_error_rms_V": 2.12589312803133,
+    "zero_region_rms_A": 0.19200688675766897,
+    "zero_band_A": 0.35,
+    "thd_pct": 10.538133191356224,
+    "fifth_pct": 8.5374011843355451,
+    "seventh_pct": 5.9796943095815767,
+    "fundamental_peak_A": 2.5999948569023879,
+    "analyzed_cycles": 6,
+    "mean_rpm": 300.00036925689841,
+    "mean_torque_Nm": 0.7069721045048204,
+    "reconstructed_voltage_max_abs_error_V": 3.8635761256955448E-13
+  },
+  "compensated": {
+    "voltage_error_rms_V": 0.71567203691198267,
+    "zero_region_rms_A": 0.1688828904294396,
+    "zero_band_A": 0.35,
+    "thd_pct": 7.5402098967758615,
+    "fifth_pct": 5.7546113631842628,
+    "seventh_pct": 3.9407427132934107,
+    "fundamental_peak_A": 2.600261737531155,
+    "analyzed_cycles": 6,
+    "mean_rpm": 300.00084033691292,
+    "mean_torque_Nm": 0.70703102282904051,
+    "reconstructed_voltage_max_abs_error_V": 5.2757798130187439E-13
+  },
+  "fit_scope": "Current and speed based reconstruction, verified against the logged pole voltages",
+  "simulation_release": "2024b"
+}

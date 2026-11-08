@@ -1,0 +1,33 @@
+{
+  "matlab": "R2024b",
+  "switching_model_runs": 2,
+  "structural_archive_audit": {
+    "PMSM_DeadTime_Drive.slx": {
+      "scopes": 19,
+      "blocks": 411,
+      "matlab_function_blocks": 0,
+      "dangling_signal_lines": 0
+    },
+    "PWM_DT_Comp.slx": {
+      "scopes": 1,
+      "blocks": 13,
+      "matlab_function_blocks": 0,
+      "dangling_signal_lines": 0
+    },
+    "IPMSM_FW_Controller.slx": {
+      "scopes": 24,
+      "blocks": 370,
+      "matlab_function_blocks": 0,
+      "dangling_signal_lines": 0
+    }
+  },
+  "isolated_ert_builds": [
+    "PWM_DT_Comp",
+    "IPMSM_FW_Controller"
+  ],
+  "host_c_compile": "pass",
+  "compensator_replay_cycles_per_run": 9000,
+  "compensator_replay_max_abs_error": 0.0,
+  "hardware_execution": "not performed",
+  "source_scope": "Peer-reviewed paper abstract plus original PMSM teaching implementation"
+}

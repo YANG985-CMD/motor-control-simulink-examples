@@ -9,8 +9,9 @@
 | 编号 | 学习主题 | 内容 | 下载与说明 |
 |---|---|---|---|
 | 02 | IPMSM 弱磁扩速 · Morimoto 1990 | 电流圆与电压椭圆、MTPA/弱磁对比、开关级整机、可移植离散控制器、ERT C 回放 | [工程介绍](examples/02-morimoto-1990-field-weakening/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/morimoto-1990-v1.0.0/morimoto1990-ipmsm-field-weakening-readable-v1.0.0.zip) |
+| 03 | 逆变器死区补偿 · Choi & Sul 1996 | 三相桥与续流、PMSM 过零波形、死区误差标定、频谱与独立 ERT C 回放 | [工程介绍](examples/03-choi-sul-1996-dead-time/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/choi-sul-1996-v1.0.0/choi-sul-1996-pmsm-dead-time-compensation-v1.0.0.zip) |
 
-编号与电机经典论文视频系列对应，目前先发布第 02 期工程。
+编号与电机经典论文视频系列对应。
 
 ## 先下载，再打开
 
