@@ -1,0 +1,22 @@
+{
+  "result": "pass",
+  "compiler": "gcc.exe (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 13.1.0",
+  "standalone_observer_compile": "pass",
+  "adapter_checks": "ADAPTER_TEST_PASS: disable, 10000 steps, timer bounds, overcurrent latch, clear, mode change, external fault",
+  "cycles": 24001,
+  "observer_period_s": 0.0001,
+  "luenberger_angle_max_deg": 0.10840876250644238,
+  "luenberger_speed_max_rpm": 0.85723876953125,
+  "smo_angle_max_deg": 0.010498000754309598,
+  "smo_speed_max_rpm": 0.12091064453125,
+  "tolerance_deg": 0.2,
+  "tolerance_rpm": 1.0,
+  "generated_source_sha256": {
+    "PMSM_EmbeddedFOC_ert_rtw/PMSM_EmbeddedFOC.c": "02be0f42458845aaa18d20dc78f139373e88f450b68424d12456dfb4e92ba487",
+    "PMSM_EmbeddedFOC_ert_rtw/PMSM_EmbeddedFOC_data.c": "2cb591475c3e79d97aba9bf98fd7039e22ebfbe50e45dfd48494c7162cf441d8",
+    "slprj/ert/ObserverPair_Embedded/ObserverPair_Embedded.c": "23bc2a75a49339d69e4e945e61099c066663d22626cbe3d21246f3c9a75df87e",
+    "slprj/ert/_sharedutils/rt_modf.c": "1e1c88c71f38bfe0d6ab1ac335d1eb3677c45417ff5b1315af3b7a92638990c9",
+    "standalone_observer/ObserverPair_Embedded.c": "b7e4af54f6dca184e17f92dd1a0856b9a2e21f10d491747babe8faa98ee6d279"
+  },
+  "target_hardware_execution": "not performed"
+}

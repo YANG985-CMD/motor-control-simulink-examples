@@ -1,0 +1,196 @@
+{
+  "nominal": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "noise": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "mismatch": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "low_speed": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "zero_speed": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "ccf_narrow": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "ccf_wide": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "switched": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0,
+      "gateTime": 0,
+      "gates": 0
+    }
+  },
+  "voltage_bias": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "current_impulse": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "warm_resistance": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  },
+  "heavy_load": {
+    "samples": 48001,
+    "exact": true,
+    "maximum_absolute_error": {
+      "t": 0,
+      "plant": 0,
+      "luen": 0,
+      "smo": 0,
+      "input": 0,
+      "sigma": 0,
+      "RsActual": 0,
+      "LsActual": 0,
+      "EFilterHz": 0,
+      "SmoKe": 0
+    }
+  }
+}

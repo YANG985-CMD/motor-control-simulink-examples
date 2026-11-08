@@ -10,14 +10,15 @@
 |---|---|---|---|
 | 02 | IPMSM 弱磁扩速 · Morimoto 1990 | 电流圆与电压椭圆、MTPA/弱磁对比、开关级整机、可移植离散控制器、ERT C 回放 | [工程介绍](examples/02-morimoto-1990-field-weakening/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/morimoto-1990-v1.0.0/morimoto1990-ipmsm-field-weakening-readable-v1.0.0.zip) |
 | 03 | 逆变器死区补偿 · Choi & Sul 1996 | 三相桥与续流、PMSM 过零波形、死区误差标定、频谱与独立 ERT C 回放 | [工程介绍](examples/03-choi-sul-1996-dead-time/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/choi-sul-1996-v1.0.0/choi-sul-1996-pmsm-dead-time-compensation-v1.0.0.zip) |
+| 专题 | PMSM 无位置传感器观测器 · SMO 与 Luenberger | 同一电机的 12 组对照、独立闭环启动、单精度观测器、ERT C 回放 | [工程介绍](examples/smo-luenberger-pmsm-observers/) · [模型 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/smo-luenberger-v1.0.0/pmsm-smo-luenberger-readable-models-v1.0.0.zip) · [原始 MAT](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/smo-luenberger-v1.0.0/observer-comparison-original-traces.mat) |
 
 编号与电机经典论文视频系列对应。
 
 ## 先下载，再打开
 
-1. 点击上面的 **完整 ZIP**，或进入 [Releases](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases) 下载工程包。GitHub 的绿色 “Code → Download ZIP” 下载的是本仓库的说明与预览，完整仿真工程通过 Releases 单独提供。
-2. 解压后进入 `仿真工程_可读移植版`，阅读其中的 `README.md`。
-3. 使用 MATLAB R2024b，按[工程介绍](examples/02-morimoto-1990-field-weakening/#运行方法)中的说明设置运行缓存位置，再打开模型或执行仿真。
+1. 点击上面的 **ZIP**，或进入 [Releases](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases) 下载工程包。GitHub 的绿色 “Code → Download ZIP” 下载的是本仓库的说明与预览，完整仿真工程通过 Releases 单独提供。
+2. 解压后打开工程内的 `README.md`。有单独提供原始数据的工程可按说明下载并放入数据目录。
+3. 使用 MATLAB R2024b，按各自工程的运行说明设置缓存位置，再打开模型或执行仿真。
 
 ## 模型预览
 

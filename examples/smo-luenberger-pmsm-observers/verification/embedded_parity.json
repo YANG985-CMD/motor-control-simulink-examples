@@ -1,0 +1,41 @@
+{
+  "startup": [
+    {
+      "exact": true,
+      "maximum_absolute_error": {
+        "t": 0,
+        "plant": 0,
+        "rpm": 0,
+        "pwm": 0,
+        "state": 0,
+        "theta": 0
+      },
+      "mode": 0,
+      "samples": 52001
+    },
+    {
+      "exact": true,
+      "maximum_absolute_error": {
+        "t": 0,
+        "plant": 0,
+        "rpm": 0,
+        "pwm": 0,
+        "state": 0,
+        "theta": 0
+      },
+      "mode": 1,
+      "samples": 52001
+    }
+  ],
+  "replay": {
+    "exact": true,
+    "maximum_absolute_error": {
+      "thetaL": 0,
+      "rpmL": 0,
+      "thetaS": 0,
+      "rpmS": 0,
+      "t": 0
+    },
+    "samples": 24001
+  }
+}

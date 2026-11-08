@@ -1,0 +1,119 @@
+{
+  "PMSM_Observer_Audit": {
+    "checked_scopes": 17,
+    "skipped_scopes": 0,
+    "overlaps": 0,
+    "placeholder_names": 0,
+    "small_fonts": 0,
+    "findings": []
+  },
+  "ObserverPair_Embedded": {
+    "checked_scopes": 11,
+    "skipped_scopes": 0,
+    "overlaps": 0,
+    "placeholder_names": 0,
+    "small_fonts": 0,
+    "findings": []
+  },
+  "PMSM_EmbeddedFOC": {
+    "checked_scopes": 21,
+    "skipped_scopes": 3,
+    "overlaps": 0,
+    "placeholder_names": 7,
+    "small_fonts": 0,
+    "findings": [
+      {
+        "code": "ports.placeholder_name",
+        "severity": "WARN",
+        "scope": "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem",
+        "blocks": [
+          "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem/Out1"
+        ],
+        "sids": [
+          "PMSM_EmbeddedFOC:116"
+        ],
+        "message": "Review this boundary name against its physical signal."
+      },
+      {
+        "code": "ports.placeholder_name",
+        "severity": "WARN",
+        "scope": "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem1",
+        "blocks": [
+          "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem1/In1"
+        ],
+        "sids": [
+          "PMSM_EmbeddedFOC:118"
+        ],
+        "message": "Review this boundary name against its physical signal."
+      },
+      {
+        "code": "ports.placeholder_name",
+        "severity": "WARN",
+        "scope": "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem1",
+        "blocks": [
+          "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem1/Out1"
+        ],
+        "sids": [
+          "PMSM_EmbeddedFOC:120"
+        ],
+        "message": "Review this boundary name against its physical signal."
+      },
+      {
+        "code": "ports.placeholder_name",
+        "severity": "WARN",
+        "scope": "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem2",
+        "blocks": [
+          "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem2/In1"
+        ],
+        "sids": [
+          "PMSM_EmbeddedFOC:122"
+        ],
+        "message": "Review this boundary name against its physical signal."
+      },
+      {
+        "code": "ports.placeholder_name",
+        "severity": "WARN",
+        "scope": "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem2",
+        "blocks": [
+          "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem2/Out1"
+        ],
+        "sids": [
+          "PMSM_EmbeddedFOC:124"
+        ],
+        "message": "Review this boundary name against its physical signal."
+      },
+      {
+        "code": "ports.placeholder_name",
+        "severity": "WARN",
+        "scope": "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem3",
+        "blocks": [
+          "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem3/In1"
+        ],
+        "sids": [
+          "PMSM_EmbeddedFOC:126"
+        ],
+        "message": "Review this boundary name against its physical signal."
+      },
+      {
+        "code": "ports.placeholder_name",
+        "severity": "WARN",
+        "scope": "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem3",
+        "blocks": [
+          "PMSM_EmbeddedFOC/FOC_Model/Curr_loop/If Action\nSubsystem4/If Action\nSubsystem3/Out1"
+        ],
+        "sids": [
+          "PMSM_EmbeddedFOC:130"
+        ],
+        "message": "Review this boundary name against its physical signal."
+      }
+    ]
+  },
+  "PMSM_Startup_Validation": {
+    "checked_scopes": 6,
+    "skipped_scopes": 0,
+    "overlaps": 0,
+    "placeholder_names": 0,
+    "small_fonts": 0,
+    "findings": []
+  }
+}

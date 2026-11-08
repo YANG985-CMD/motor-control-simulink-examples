@@ -1,0 +1,32 @@
+{
+  "0": {
+    "final_true_rpm": 900.3536556754449,
+    "final_estimated_rpm": 900.1396484375,
+    "speed_estimate_rms_rpm": 0.8319883097961008,
+    "states": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "max_pwm_count": 7595.779296875,
+    "min_pwm_count": 404.2205810546875
+  },
+  "1": {
+    "final_true_rpm": 900.3253330025764,
+    "final_estimated_rpm": 900.0980224609375,
+    "speed_estimate_rms_rpm": 0.8070574176859227,
+    "states": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "max_pwm_count": 7593.85498046875,
+    "min_pwm_count": 406.14508056640625
+  }
+}

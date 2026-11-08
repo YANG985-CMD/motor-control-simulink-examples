@@ -1,0 +1,22 @@
+{
+  "matlab_release": "2024b",
+  "builds": [
+    {
+      "target": "ObserverPair_Embedded",
+      "data_files": [
+        "ObserverPair_Embedded.sldd"
+      ],
+      "resolved_isolated_copies": true,
+      "result": "pass"
+    },
+    {
+      "target": "PMSM_EmbeddedFOC",
+      "data_files": [
+        "ObserverPair_Embedded.sldd",
+        "PMSM_EmbeddedFOC.sldd"
+      ],
+      "resolved_isolated_copies": true,
+      "result": "pass"
+    }
+  ]
+}
