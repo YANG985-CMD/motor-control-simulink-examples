@@ -29,5 +29,6 @@
   "compensator_replay_cycles_per_run": 9000,
   "compensator_replay_max_abs_error": 0.0,
   "hardware_execution": "not performed",
-  "source_scope": "Peer-reviewed paper abstract plus original PMSM teaching implementation"
+  "paper_reference_doi": "10.1109/63.486169",
+  "implementation_scope": "PMSM teaching simulation"
 }

@@ -32,9 +32,11 @@ metrics = run_deadtime;
 
 ## 论文与教学实现
 
-Jong Woo Choi、Seung Ki Sul，1996。*Inverter Output Voltage Synthesis Using Novel Dead Time Compensation*. IEEE Transactions on Power Electronics 11(2), 221–227。 [IEEE DOI](https://doi.org/10.1109/63.486169) · [作者机构记录及摘要](https://research.knu.ac.kr/en/publications/inverter-output-voltage-synthesis-using-novel-dead-time-compensat-2/)
+Jong Woo Choi、Seung Ki Sul，1996。*Inverter Output Voltage Synthesis Using Novel Dead Time Compensation*. IEEE Transactions on Power Electronics 11(2), 221–227。 [IEEE DOI](https://doi.org/10.1109/63.486169) · [论文信息](https://research.knu.ac.kr/en/publications/inverter-output-voltage-synthesis-using-novel-dead-time-compensat-2/)
 
-作者机构摘要说明，论文以 SVPWM 修正逆变器输出电压，可由控制器在初始化自动完成，无需额外硬件。亚微秒级补偿能力来自原文摘要所述的实验。现有资料核对到该摘要，以下标定、边沿预测和波形属于本期针对 PMSM 的教学实现。
+Choi 和 Sul 提出用空间矢量 PWM 补偿死区引起的电压误差，使逆变器输出电压贴近指令。作者报告了无需增加硬件的初始化自动标定，以及亚微秒级的补偿能力。
+
+下面的标定流程、边沿电流预测和波形数据来自本期 PMSM 教学仿真。
 
 1. 在无补偿的一次仿真中，使用 0.34–0.49 s 作为标定段。由 d/q 电流及机械转速，按离散 PMSM 方程反算每个快步的相电压，然后按 100 μs 的 PWM 周期取平均。真实桥臂电压只用于独立交叉核对反算结果。
 2. 筛出三个相电流极性都较稳定的周期。先去掉三相共模，然后将「输出减指令」的相电压误差对电流极性做最小二乘拟合，得到 2.310 V 的等效误差幅值。换算后对应 2.668 μs 或 2.668% 占空比。这个系数包含开关时序、采样与有限仿真步长共同作用后的平均效果。
