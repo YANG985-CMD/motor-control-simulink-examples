@@ -1,0 +1,39 @@
+{
+  "result": "pass",
+  "compiler": "gcc.exe (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 13.1.0",
+  "source_sha256": {
+    "IPMSM_FW_Controller.c": "03227f0f165c4c732fba81de54794648761b5a8f9e8a241ce9d1f7bcfedaaca7",
+    "IPMSM_FW_Controller_data.c": "65b718d94b1904818d72977e429762de196bb1648ae653272f66b5d33250430b"
+  },
+  "test_scope": "Host replay of the ARM Cortex ERT source",
+  "runs": {
+    "baseline": {
+      "frames": 16501,
+      "max_abs_error": {
+        "duty_a": 1.7881393432617188e-07,
+        "duty_b": 1.1920928955078125e-07,
+        "duty_c": 1.7881393432617188e-07,
+        "run": 0.0,
+        "id_ref_A": 0.0,
+        "iq_ref_A": 0.0,
+        "id_A": 5.960464477539062e-07,
+        "iq_A": 9.5367431640625e-07,
+        "voltage_V": 7.62939453125e-06
+      }
+    },
+    "weakening": {
+      "frames": 16501,
+      "max_abs_error": {
+        "duty_a": 1.7881393432617188e-07,
+        "duty_b": 2.384185791015625e-07,
+        "duty_c": 2.384185791015625e-07,
+        "run": 0.0,
+        "id_ref_A": 0.0,
+        "iq_ref_A": 0.0,
+        "id_A": 1.9073486328125e-06,
+        "iq_A": 9.5367431640625e-07,
+        "voltage_V": 1.9073486328125e-05
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-08",
+  "matlab": "R2024b",
+  "structural_checks": "healthy",
+  "primitive_inputs_unchanged": 452,
+  "before_after_bitwise_equal": true,
+  "isolated_build": {
+    "files": [
+      "IPMSM_FW_Controller.slx",
+      "morimoto_params.sldd"
+    ],
+    "no_dictionary_shadowing": true,
+    "result": "pass"
+  },
+  "generated_C_compile_and_replay": "pass",
+  "board_adapter_compile": "pass",
+  "raw_control_cycles_per_run": 16501,
+  "layout": {
+    "controller": {
+      "block_overlap_count": 0,
+      "placeholder_port_names": 0,
+      "block_count": 370,
+      "subsystems": 23
+    },
+    "drive": {
+      "block_overlap_count": 0,
+      "placeholder_port_names": 0,
+      "block_count": 404,
+      "subsystems": 18
+    }
+  },
+  "visual_review": [
+    "drive",
+    "controller",
+    "FOC_Model",
+    "currloop",
+    "idq_Controller",
+    "d_axis_pi",
+    "q_axis_pi",
+    "modulation",
+    "inverter",
+    "motor"
+  ],
+  "single_precision_parameter_rounding": "Expected float32 rounding diagnostics retained; checked by compiled C replay",
+  "hardware_execution": "not performed",
+  "published_model_reload_and_update": "pass"
+}

@@ -1,0 +1,55 @@
+{
+  "baseline": {
+    "final_mean_rpm": 2274.9633637247935,
+    "final_mean_torque_Nm": 1.3475248392406636,
+    "final_mean_id_A": -0.93113291959191191,
+    "final_mean_iq_A": 4.8045119035584714,
+    "max_sampled_voltage_V": 49,
+    "max_current_reference_A": 13.973287591793685,
+    "peak_switched_current_vector_A": 11.520527754610516
+  },
+  "weakening": {
+    "final_mean_rpm": 4199.9604476087243,
+    "final_mean_torque_Nm": 1.3881328208050303,
+    "final_mean_id_A": -12.42189000234305,
+    "final_mean_iq_A": 3.3878532512459145,
+    "max_sampled_voltage_V": 49,
+    "max_current_reference_A": 13.973287591793685,
+    "peak_switched_current_vector_A": 13.626422658198861
+  },
+  "vdc_V": 86.602540378443862,
+  "i_limit_A": 30,
+  "negative_id_limit_A": -21.6,
+  "controller_sample_s": 0.0001,
+  "switching_step_s": 2.5E-6,
+  "deadtime_s": 2.5E-6,
+  "target_rpm": 4200,
+  "final_measurement_window_s": [
+    1.55,
+    1.65
+  ],
+  "replay_layout": {
+    "inputs": [
+      "Ia",
+      "Ib",
+      "Ic",
+      "Vbus",
+      "Enable",
+      "SpeedRef",
+      "Speed",
+      "Theta",
+      "UseFW"
+    ],
+    "outputs": [
+      "DutyA",
+      "DutyB",
+      "DutyC",
+      "Run",
+      "IdRef",
+      "IqRef",
+      "Id",
+      "Iq",
+      "Vmag"
+    ]
+  }
+}

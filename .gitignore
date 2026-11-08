@@ -1,0 +1,10 @@
+# Release packages are distributed through GitHub Releases.
+/packages/
+# MATLAB/Simulink generated caches and build output
+slprj/
+*.slxc
+*.autosave
+*.slx.r20*
+*_ert_rtw/
+*_grt_rtw/
+__pycache__/
