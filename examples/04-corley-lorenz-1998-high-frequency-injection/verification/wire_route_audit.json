@@ -1,0 +1,10 @@
+{
+  "independent_wire_crossings": 0,
+  "scope": "Corley_HFI_Observer",
+  "connections_checked": 25,
+  "orthogonal_routes": true,
+  "diagonals": [],
+  "backtracking_segments": 0,
+  "lines_through_block_interiors": [],
+  "regenerated_c_tokens_match": true
+}

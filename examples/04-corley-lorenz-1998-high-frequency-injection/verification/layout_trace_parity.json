@@ -1,0 +1,41 @@
+{
+  "comparison": "Layout revision compared with release 1.0.0",
+  "exact_metric_match": true,
+  "cases": {
+    "standstill": {
+      "samples": 44001,
+      "signals": 23,
+      "exact": true
+    },
+    "injection_off": {
+      "samples": 44001,
+      "signals": 23,
+      "exact": true
+    },
+    "current_noise": {
+      "samples": 44001,
+      "signals": 23,
+      "exact": true
+    },
+    "low_speed": {
+      "samples": 44001,
+      "signals": 23,
+      "exact": true
+    },
+    "high_speed": {
+      "samples": 44001,
+      "signals": 23,
+      "exact": true
+    },
+    "high_without_d_feedforward": {
+      "samples": 44001,
+      "signals": 23,
+      "exact": true
+    },
+    "opposite_polarity": {
+      "samples": 44001,
+      "signals": 23,
+      "exact": true
+    }
+  }
+}

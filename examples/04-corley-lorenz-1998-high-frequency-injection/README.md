@@ -2,7 +2,7 @@
 
 在同一台 48 V 凸极 IPMSM 上，沿估计 q 轴注入 2 kHz 电压，从估计 d 轴电流解调位置残差。工程有 0 rpm 开关对照、噪声、60 rpm、5000 rpm、高速前馈开关对照和 180° 极性共七组工况。
 
-[下载完整工程 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/corley-lorenz-1998-v1.0.0/corley-lorenz-1998-ipmsm-hfi-v1.0.0.zip)，包含 Simulink 模型、数据字典、原始轨迹、生成的 ERT C 和两种回放验证入口。
+[下载完整工程 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/corley-lorenz-1998-v1.0.1/corley-lorenz-1998-ipmsm-hfi-v1.0.1.zip)，包含 Simulink 模型、数据字典、原始轨迹、生成的 ERT C 和两种回放验证入口。
 
 ## 真实模型图
 
@@ -76,3 +76,9 @@ python verify_c.py --gcc gcc
 - [七组对照指标](verification/metrics.json)
 - [相同启动采样的 C 回放](verification/host_replay.json) · [闭环软件在环](verification/sil_replay.json)
 - [布局检查](verification/layout_audit.json) · [文件校验值](package-manifest.json)
+
+## v1.0.1 观测器总图
+
+新版按主链与载波支路分排，重新绘制根层 25 条连接。几何核查覆盖独立走线交叉、穿过块内部和折返。七组原始轨迹逐点一致，重新生成的 C 与前一版本的代码符号一致，编译后通过 11,207 点启动回放。
+
+[走线核查](verification/wire_route_audit.json) · [七组轨迹逐点核对](verification/layout_trace_parity.json)
