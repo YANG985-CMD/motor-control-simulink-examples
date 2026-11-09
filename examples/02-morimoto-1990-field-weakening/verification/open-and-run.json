@@ -1,0 +1,23 @@
+{
+  "model": "Morimoto1990_FieldWeakening",
+  "matlab_release": "2024b",
+  "format_files": [
+    "Morimoto1990_FieldWeakening.slx",
+    "Morimoto1990_FieldWeakening.sldd"
+  ],
+  "isolated_run": true,
+  "cases": {
+    "MTPA_only": {
+      "case_name": "MTPA_only",
+      "runtime_seconds": 22.7974921,
+      "max_abs_trace_error": 0,
+      "max_abs_control_error": 0
+    },
+    "Field_weakening": {
+      "case_name": "Field_weakening",
+      "runtime_seconds": 8.3029543,
+      "max_abs_trace_error": 0,
+      "max_abs_control_error": 0
+    }
+  }
+}

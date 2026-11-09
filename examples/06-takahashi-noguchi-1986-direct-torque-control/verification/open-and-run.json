@@ -1,0 +1,21 @@
+{
+  "model": "Takahashi1986_DTC",
+  "matlab_release": "2024b",
+  "format_files": [
+    "Takahashi1986_DTC.slx",
+    "Takahashi1986_DTC.sldd"
+  ],
+  "isolated_run": true,
+  "cases": {
+    "Wide_band_0p40Nm": {
+      "case_name": "Wide_band_0p40Nm",
+      "runtime_seconds": 12.5410496,
+      "max_abs_trace_error": 0
+    },
+    "Narrow_band_0p15Nm": {
+      "case_name": "Narrow_band_0p15Nm",
+      "runtime_seconds": 1.9244968,
+      "max_abs_trace_error": 0
+    }
+  }
+}

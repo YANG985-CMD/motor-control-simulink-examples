@@ -1,0 +1,21 @@
+{
+  "model": "ChoiSul1996_DeadTime",
+  "matlab_release": "2024b",
+  "format_files": [
+    "ChoiSul1996_DeadTime.slx",
+    "ChoiSul1996_DeadTime.sldd"
+  ],
+  "isolated_run": true,
+  "cases": {
+    "No_compensation": {
+      "case_name": "No_compensation",
+      "runtime_seconds": 8.5607387,
+      "max_abs_control_error": 0
+    },
+    "Calibrated_compensation": {
+      "case_name": "Calibrated_compensation",
+      "runtime_seconds": 7.9695238,
+      "max_abs_control_error": 0
+    }
+  }
+}

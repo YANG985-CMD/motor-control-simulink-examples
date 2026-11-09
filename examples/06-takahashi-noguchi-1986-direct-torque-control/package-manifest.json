@@ -1,48 +1,18 @@
 {
-  "release": "takahashi-noguchi-1986-v1.0.0",
-  "download_url": "https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/takahashi-noguchi-1986-v1.0.0/takahashi-noguchi-1986-induction-motor-dtc-v1.0.0.zip",
-  "archive": "takahashi-noguchi-1986-induction-motor-dtc-v1.0.0.zip",
-  "sha256": "31bd02856ca507f4c3532a19bb4e16d5f9686b1fa4401ba01b87d7c2581423f9",
-  "size": 4136794,
-  "file_count": 38,
-  "source_sha256": {
-    "comparison.mat": "7cbec3accc9fc4bb7218efdb1a7f624b5ddef38899346a51d9f5d0253e3ebb49",
-    "generate_portable.m": "d04bdaf3553a6a44c6bbabc937c8a0e1ac852eb7cb9dc3775a50758d25696e69",
-    "generated_c/rt_defines.h": "6fecb8d54e912e1165b8ac66d08a3bae50c03c688d6bedc0b4bd95d152dc2fb1",
-    "generated_c/rt_nonfinite.c": "541487bf3bfebce74d4a59613ad088317b5598cea62b0542a313236305e878e3",
-    "generated_c/rt_nonfinite.h": "f94723a3a5345d7f79e647478a2be18d52aa7fa8ee78b40960ffe5e2fb8d01b3",
-    "generated_c/rtGetInf.c": "2e1f538cdbf5261c9620f4814bd8c36df5e8a56e3015972c27c19e062c789d9f",
-    "generated_c/rtGetInf.h": "4b17d03768d5957d5bbb9800babbed93eff57a362fb0be038bb3dbe54698da13",
-    "generated_c/rtGetNaN.c": "9f469f8687d1ed029fbd2f65ee93dd514422d9c55cc61f5ef3c950632ddf38a1",
-    "generated_c/rtGetNaN.h": "982cb25cb30723e183ac75ae5eb0afa6f7a90dffcb2cd3e3185e30a659137d4a",
-    "generated_c/rtwtypes.h": "00ea7f5de69f709ae479c8f5418e6ebdf1238e14daaebb808eda1bf5c2789fa1",
-    "generated_c/Takahashi_DTC_Controller.c": "2be05c91c4b5c5d3a90453e2afd82063fedc0dd0189c5789f51d4aa377951277",
-    "generated_c/Takahashi_DTC_Controller.h": "07df6391cbd465a5c5a9952543ec5194b1f1dc167ee8964c168578f7662f6eb6",
-    "generated_c/Takahashi_DTC_Controller_data.c": "dcf017c382b7b233e6b42ddd51e845ac56cc8acefbe3c4571d02f82a63348bef",
-    "generated_c/Takahashi_DTC_Controller_private.h": "19d3020b0408a03d85fb9e08b248e7f7a34e331cb8f706bd91b983ffc9e330da",
-    "generated_c/Takahashi_DTC_Controller_types.h": "4dbeb0295e5b8aa36a511e01f360a30efe5d60a078d80d93e24d10e72d08b833",
-    "host_replay.json": "d611ede7f002aa060851e1f40fec48142d7e517b6e367186bb59734c8bdd8c5c",
-    "layout_trace_parity.json": "0cf3ad38422733a3162699239e523bd8db7cc5c64e1a00182047a5a520f38704",
-    "metrics.json": "b04aaba901c0fbf3c98be443eee1f0315dcb3e45f964fd6be7aa8cdca08c98ee",
-    "model_images/bench.png": "c66d1072a0b52c942472f925fe5f44e13de5ffd411d4088f0551960d07af3a65",
-    "model_images/Flux_Torque_Hysteresis.png": "0da10d0a599a5ec019f1bf825870c9d365f0cf439c59a5eaca264bca735ec7e4",
-    "model_images/overview.png": "654cf903b665545b395a1a225f457c966c4a22e62e258d965efcd2ce388d35e1",
-    "model_images/Six_Sectors_and_Switching_Table.png": "754d73f29ce3fa9249a5818278fe9baac9381f12c497dd38a5f1892efbb6e834",
-    "model_images/Voltage_Model_and_Torque.png": "5748f875fba459bcaf0db95238a27019272856573aa1f97f393ec80782e5611b",
-    "README.md": "a709a42aa9058abbb4df3d3a9073a088e6d3cb4d4f3a3560ff0a417cff6ade14",
-    "run_comparisons.m": "689a38d40051cf520af825b193ca73240320168d7810be0aaf51ed2475efe342",
-    "sim/Takahashi_DTC_Controller/model_images/Flux_Torque_Hysteresis.png": "0da10d0a599a5ec019f1bf825870c9d365f0cf439c59a5eaca264bca735ec7e4",
-    "sim/Takahashi_DTC_Controller/model_images/overview.png": "654cf903b665545b395a1a225f457c966c4a22e62e258d965efcd2ce388d35e1",
-    "sim/Takahashi_DTC_Controller/model_images/Six_Sectors_and_Switching_Table.png": "754d73f29ce3fa9249a5818278fe9baac9381f12c497dd38a5f1892efbb6e834",
-    "sim/Takahashi_DTC_Controller/model_images/Voltage_Model_and_Torque.png": "5748f875fba459bcaf0db95238a27019272856573aa1f97f393ec80782e5611b",
-    "sim/Takahashi_DTC_Controller/Takahashi_DTC_Controller.slx": "c994820ad4ec1166fb7892fc51d14ebf94de80d8df7d4f11c18420080fd00ee4",
-    "sim/Takahashi_DTC_Controller/Takahashi_DTC_Controller_parameters.sldd": "03f767db2187dba87af32c800ee669a57d60e4c5153db47195e6d5e74da83cb2",
-    "sim/Takahashi_Induction_DTC_Bench/model_images/Induction_Motor_and_Shaft.png": "eb7128eb5b5c088ac713c745c3cc9d1deda5c170d7a8959917f37bcf3202b337",
-    "sim/Takahashi_Induction_DTC_Bench/model_images/overview.png": "c66d1072a0b52c942472f925fe5f44e13de5ffd411d4088f0551960d07af3a65",
-    "sim/Takahashi_Induction_DTC_Bench/model_images/Two_Level_Switching_Inverter.png": "238107ce30eed3d420139b94cf2b2b0bc15d8a5b2032a26a7c4908034d4f2ba1",
-    "sim/Takahashi_Induction_DTC_Bench/Takahashi_Induction_DTC_Bench.slx": "b272add9953a0ad7bfedfee36af7b9e6fd970aae23cef2fc4f0355f7b0dc354c",
-    "sim/Takahashi_Induction_DTC_Bench/Takahashi_Induction_DTC_Bench_parameters.sldd": "64184b9aedf74bb1f2c7e6b50f46789228846db756776814a60fe82b79162d0c",
-    "verify_c.py": "b075157bb1a937b1a0f7b1c0bdc8c4c414784e56f12728f5366ee7314bc2cea6",
-    "video.json": "5cc87cd4cc65c11de38f270c1c098dcd0e440bb68bff861b535fded4c89b7930"
-  }
+  "delivery_format": ".slx + .sldd",
+  "entry_model": "Takahashi1986_DTC.slx",
+  "setup_script_required": false,
+  "matlab_release": "R2024b",
+  "files": [
+    {
+      "name": "Takahashi1986_DTC.sldd",
+      "bytes": 3131,
+      "sha256": "64184b9aedf74bb1f2c7e6b50f46789228846db756776814a60fe82b79162d0c"
+    },
+    {
+      "name": "Takahashi1986_DTC.slx",
+      "bytes": 4687584,
+      "sha256": "71eb4b692733973b4fa520e011cde709372f362ba5ebc6ca225f1fa423547c57"
+    }
+  ]
 }

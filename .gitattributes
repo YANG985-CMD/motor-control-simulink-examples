@@ -1,3 +1,6 @@
 *.md text eol=lf
 *.json text eol=lf
 *.png binary
+
+*.slx binary
+*.sldd binary

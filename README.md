@@ -1,45 +1,33 @@
 # 电机控制 Simulink 仿真学习工程
 
-**Motor Control Simulink Examples** · 从控制原理、模块搭建到生成 C 代码的电机仿真工程集。
+下载示例，打开主模型，点击「运行」，就能查看波形。电机、控制器和默认测试工况都随模型提供。
 
-这里按主题收录完整学习工程：先读模型总览，再进入算法子系统，运行同一台电机的对比工况，最后查看仿真数据和 C 代码验证记录。每个工程提供模型、参数、运行入口与结果说明。
+## 示例目录
 
-## 工程目录
+| 编号 | 学习主题 | 文件形式 | 下载 |
+| --- | --- | --- | --- |
+| 02 | [IPMSM 弱磁扩速](examples/02-morimoto-1990-field-weakening/) | `.slx + .sldd` | [直接运行包](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/open-and-run-v2.0.0/02-morimoto-1990-field-weakening-open-and-run.zip) |
+| 03 | [PMSM 逆变器死区补偿](examples/03-choi-sul-1996-dead-time/) | `.slx + .sldd` | [直接运行包](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/open-and-run-v2.0.0/03-choi-sul-1996-dead-time-open-and-run.zip) |
+| 04 | [凸极 IPMSM 高频注入](examples/04-corley-lorenz-1998-high-frequency-injection/) | `.slx + .sldd` | [直接运行包](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/open-and-run-v2.0.0/04-corley-lorenz-1998-high-frequency-injection-open-and-run.zip) |
+| 05 | [IPMSM 扩展反电动势](examples/05-chen-2003-extended-emf/) | `.slx` | [直接运行包](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/open-and-run-v2.0.0/05-chen-2003-extended-emf-open-and-run.zip) |
+| 06 | [异步电机直接转矩控制](examples/06-takahashi-noguchi-1986-direct-torque-control/) | `.slx + .sldd` | [直接运行包](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/open-and-run-v2.0.0/06-takahashi-noguchi-1986-direct-torque-control-open-and-run.zip) |
+| 专题 | [SMO 与 Luenberger 观测器对比](examples/smo-luenberger-pmsm-observers/) | `.slx` | [直接运行包](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/open-and-run-v2.0.0/smo-luenberger-pmsm-observers-open-and-run.zip) |
 
-| 编号 | 学习主题 | 内容 | 下载与说明 |
-|---|---|---|---|
-| 02 | IPMSM 弱磁扩速 · Morimoto 1990 | 电流圆与电压椭圆、MTPA/弱磁对比、开关级整机、可移植离散控制器、ERT C 回放 | [工程介绍](examples/02-morimoto-1990-field-weakening/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/morimoto-1990-v1.0.0/morimoto1990-ipmsm-field-weakening-readable-v1.0.0.zip) |
-| 03 | 逆变器死区补偿 · Choi & Sul 1996 | 三相桥与续流、PMSM 过零波形、死区误差标定、频谱与独立 ERT C 回放 | [工程介绍](examples/03-choi-sul-1996-dead-time/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/choi-sul-1996-v1.0.0/choi-sul-1996-pmsm-dead-time-compensation-v1.0.0.zip) |
-| 04 | 凸极 IPMSM 高频注入 · Corley & Lorenz 1998 | q 轴注入、d 轴解调、0–5000 rpm 对照、极性歧义、ERT C 与闭环 SIL | [工程介绍](examples/04-corley-lorenz-1998-high-frequency-injection/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/corley-lorenz-1998-v1.0.1/corley-lorenz-1998-ipmsm-hfi-v1.0.1.zip) |
-| 05 | IPMSM 扩展反电动势 · Chen 等 2003 | 同机角度估计对比、扩展反电动势观测器、原始轨迹与 ERT C 回放 | [工程介绍](examples/05-chen-2003-extended-emf/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/chen-2003-v1.0.0/chen-2003-ipmsm-extended-emf-v1.0.0.zip) |
-| 06 | 异步电机直接转矩控制 · Takahashi & Noguchi 1986 | 磁链估计、滞环与六扇区开关表、转矩响应和纹波对比、ERT C 回放 | [工程介绍](examples/06-takahashi-noguchi-1986-direct-torque-control/) · [完整 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/takahashi-noguchi-1986-v1.0.0/takahashi-noguchi-1986-induction-motor-dtc-v1.0.0.zip) |
-| 专题 | PMSM 无位置传感器观测器 · SMO 与 Luenberger | 同一电机的 12 组对照、独立闭环启动、单精度观测器、ERT C 回放 | [工程介绍](examples/smo-luenberger-pmsm-observers/) · [模型 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/smo-luenberger-v1.0.0/pmsm-smo-luenberger-readable-models-v1.0.0.zip) · [原始 MAT](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/smo-luenberger-v1.0.0/observer-comparison-original-traces.mat) |
+## 怎么使用
 
-编号与电机经典论文视频系列对应。
+1. 下载某个「直接运行包」并解压，或用 **Code → Download ZIP** 下载全部示例。
+2. 在 MATLAB 中进入解压目录，或仓库内对应示例的 `model` 文件夹。
+3. 打开该目录唯一的 `.slx`，点击「运行」，查看 Scope。
+4. 有 **Experiment_Settings** 的模型，可双击它切换对照工况。
 
-## 先下载，再打开
+双文件示例把 `.slx` 和 `.sldd` 放在同一个目录，参数字典由模型自动关联。单文件示例的参数保存在模型内。运行包不含 `.m`，启动与切换工况均在模型内完成。
 
-1. 点击上面的 **ZIP**，或进入 [Releases](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases) 下载工程包。GitHub 的绿色 “Code → Download ZIP” 下载的是本仓库的说明与预览，完整仿真工程通过 Releases 单独提供。
-2. 解压后打开工程内的 `README.md`。有单独提供原始数据的工程可按说明下载并放入数据目录。
-3. 使用 MATLAB R2024b，按各自工程的运行说明设置缓存位置，再打开模型或执行仿真。
+## 已验证内容
 
-## 模型预览
+六个示例使用 MATLAB R2024b，在干净会话和只包含运行所需文件的目录中验证。共运行 26 组工况，并与整理前的原始轨迹逐点核对。每个示例的 `verification/open-and-run.json` 记录对应结果，`package-manifest.json` 给出模型文件校验值。
 
-整机包括工况与采样、FOC 控制器、PWM 与逆变器、电机及机械负载。
+弱磁、死区补偿、高频注入与直接转矩控制保留参数字典，便于查看和复用控制参数。扩展反电动势与双观测器教学示例使用单文件。各例说明给出已验证的产品环境、论文依据和默认工况。
 
-![弱磁扩速整机模型](examples/02-morimoto-1990-field-weakening/images/drive.png)
+![弱磁扩速模型](examples/02-morimoto-1990-field-weakening/images/open-and-run-overview.png)
 
-关键控制算法由可展开的原生模块构成。d/q 电流控制按照信号流程排布，控制器与仿真试验台分开。
-
-![d/q 电流控制器](examples/02-morimoto-1990-field-weakening/images/idq_Controller.png)
-
-## 每份工程如何学习
-
-- **看结构**：从整机顶层进入控制器，了解采样、控制、调制与电机之间的连接。
-- **跑工况**：使用同一台电机、相同负载与母线条件，对照不同控制策略。
-- **读数据**：核对原始时间序列、指标定义和统计窗口。
-- **看实现**：查看离散控制接口、生成的 C 源码、板级适配示例和主机回放结果。
-
-各工程单独记录 MATLAB 版本、所需产品与验证范围。论文原始结论与本工程仿真结果分别说明。
-
-相关建模方法：[Simulink 清晰建模与模块移植](https://github.com/YANG985-CMD/embedded-foc-simulink-codegen/tree/main/skills/simulink-readable-modeling)。
+相关建模规则提供三种交付选择，开工前由用户选择文件形式。[Simulink 清晰建模与模块移植](https://github.com/YANG985-CMD/embedded-foc-simulink-codegen/tree/main/skills/simulink-readable-modeling)

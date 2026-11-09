@@ -1,0 +1,70 @@
+{
+  "model": "PMSM_SMO_Luenberger",
+  "matlab_release": "2024b",
+  "format_files": [
+    "PMSM_SMO_Luenberger.slx"
+  ],
+  "isolated_run": true,
+  "cases": {
+    "nominal": {
+      "case_name": "nominal",
+      "runtime_seconds": 17.2364302,
+      "max_abs_trace_error": 0
+    },
+    "noise": {
+      "case_name": "noise",
+      "runtime_seconds": 9.2966602,
+      "max_abs_trace_error": 0
+    },
+    "mismatch": {
+      "case_name": "mismatch",
+      "runtime_seconds": 9.3856804,
+      "max_abs_trace_error": 0
+    },
+    "low_speed": {
+      "case_name": "low_speed",
+      "runtime_seconds": 11.8399912,
+      "max_abs_trace_error": 0
+    },
+    "zero_speed": {
+      "case_name": "zero_speed",
+      "runtime_seconds": 9.6230539,
+      "max_abs_trace_error": 0
+    },
+    "ccf_narrow": {
+      "case_name": "ccf_narrow",
+      "runtime_seconds": 10.538928,
+      "max_abs_trace_error": 0
+    },
+    "ccf_wide": {
+      "case_name": "ccf_wide",
+      "runtime_seconds": 12.0078063,
+      "max_abs_trace_error": 0
+    },
+    "switched": {
+      "case_name": "switched",
+      "runtime_seconds": 13.5981471,
+      "max_abs_trace_error": 0
+    },
+    "voltage_bias": {
+      "case_name": "voltage_bias",
+      "runtime_seconds": 12.516072,
+      "max_abs_trace_error": 0
+    },
+    "current_impulse": {
+      "case_name": "current_impulse",
+      "runtime_seconds": 11.9335708,
+      "max_abs_trace_error": 0
+    },
+    "warm_resistance": {
+      "case_name": "warm_resistance",
+      "runtime_seconds": 12.3349656,
+      "max_abs_trace_error": 0
+    },
+    "heavy_load": {
+      "case_name": "heavy_load",
+      "runtime_seconds": 15.748844,
+      "max_abs_trace_error": 0
+    }
+  }
+}

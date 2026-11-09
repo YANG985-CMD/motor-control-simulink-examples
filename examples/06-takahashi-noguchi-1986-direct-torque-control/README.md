@@ -1,47 +1,36 @@
-# 能不能直接管住电机转矩？
+# 06 · 异步电机直接转矩控制
 
-Isao Takahashi · Toshihiko Noguchi，1986，A New Quick-Response and High-Efficiency Control Strategy of an Induction Motor。 [IEEE 出版记录](https://doi.org/10.1109/TIA.1986.4504799)
+Wide_band_0p40Nm 和 Narrow_band_0p15Nm 两组工况使用同一台异步电机。转矩指令从 3 N·m 提到 7 N·m，比较磁链、转矩响应和开关行为。
 
-同一异步电机、100 V 直流母线、相同负载与 25 μs 控制节拍。比较 0.40 N·m 与 0.15 N·m 两种转矩滞环带宽。按磁链和转矩误差查六扇区开关表，转矩比较器在回到目标附近时切入零矢量。台架增加预励磁和一拍开关施加延迟，异步电机和逆变器采用独立模块。
+[下载直接运行包](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/open-and-run-v2.0.0/06-takahashi-noguchi-1986-direct-torque-control-open-and-run.zip) · [查看运行验证](verification/open-and-run.json)
 
-3 → 7 N·m 阶跃达到 90% 的时间分别为 0.95 与 0.80 ms。稳态峰峰值分别为 0.692 与 0.576 N·m。0.49–0.57 s 内每相平均每秒切换 3067 与 6858 次，按边沿计数。
+## 打开与运行
 
-板级接入时，每 25 μs 输入同步 αβ 端电压与电流、磁链命令、转矩命令和滞环带宽。三路上管输出为 0 或 1，板级驱动层负责互补、死区、过流关断和失能。
+1. 下载并解压运行包，或者下载本仓库后进入本例的 `model` 文件夹。
+2. 将 MATLAB 当前文件夹切换到该目录。
+3. 打开 **Takahashi1986_DTC.slx**，点击「运行」。Scope 显示结果曲线。
 
+双击顶层的 **Experiment_Settings**，在 **Experiment** 下拉框选择工况，再点「运行」。默认选中 `Narrow_band_0p15Nm`。
 
+本例采用 **.slx + .sldd**。保留独立参数字典，便于查看电机与控制参数，以及复用离散控制器。
 
-[下载完整工程 ZIP](https://github.com/YANG985-CMD/motor-control-simulink-examples/releases/download/takahashi-noguchi-1986-v1.0.0/takahashi-noguchi-1986-induction-motor-dtc-v1.0.0.zip)
+- [Takahashi1986_DTC.sldd](model/Takahashi1986_DTC.sldd)
+- [Takahashi1986_DTC.slx](model/Takahashi1986_DTC.slx)
 
-## 真实模型图
+控制器、采样、逆变器和电机保留在主模型的分层子系统中，可以逐层双击查看原生模块。默认工况已经随模型保存。
 
-![同机对照台架](images/bench.png)
+![模型总览](images/open-and-run-overview.png)
 
-![独立控制核心](images/controller.png)
+## 运行验证
 
-[查看关键算法子系统](images/detail.png) · [查看另一处关键结构](images/second.png)
+使用 MATLAB R2024b 和 Simulink，在干净会话中只复制上述模型文件，直接运行了 2 组工况。与原工程对应轨迹逐点核对，最大绝对差见 [open-and-run.json](verification/open-and-run.json)。图表读数来自本工程仿真。
 
-## 运行
+## 论文依据
 
-用 MATLAB R2024b 和 Simulink 打开工程。在 MATLAB 中把当前文件夹切到解压后的工程根目录，然后运行。
+Isao Takahashi; Toshihiko Noguchi (1986). *A New Quick-Response and High-Efficiency Control Strategy of an Induction Motor*.
 
-```matlab
-run_comparisons
-```
+[论文 DOI](https://doi.org/10.1109/TIA.1986.4504799)
 
-台架位于 sim/Takahashi_Induction_DTC_Bench，控制核心位于 sim/Takahashi_DTC_Controller。每个模型的参数字典与模型放在同一目录。结果写入工程根目录。运行缓存默认放在系统临时目录，也可以把指定的可写目录作为 run_comparisons 的参数。
+## 配套记录
 
-## 生成 C 与主机回放
-
-使用 Simulink Coder 和 Embedded Coder，运行 generate_portable，从独立控制核心和参数字典生成 ERT C。工程同时附上已生成的 C 文件。使用 Python、NumPy、SciPy 和 GCC，回放两组相同输入。
-
-```text
-python verify_c.py Takahashi_DTC_Controller --directory . --runtime ./replay_tmp
-```
-
-同一台异步电机的两组滞环带宽试验，共 49,602 点 C 回放。 comparison.mat 保存原始采样，metrics.json 记录指标与统计区间，video.json 保存视频绘图数据。host_replay.json 记录逐样本误差，layout_trace_parity.json 记录整理布局前后的数据一致性。
-
-## 验证记录
-
-- [对照指标](verification/metrics.json)
-- [同采样 C 回放](verification/host_replay.json) · [布局整理前后的一致性](verification/layout_trace_parity.json)
-- [下载包和文件校验值](package-manifest.json)
+本目录保留已有的原始指标与验证记录。本次重新打包的运行验证单独记录在 `verification/open-and-run.json`，历史发布可从仓库 Releases 查看。

@@ -1,0 +1,46 @@
+{
+  "model": "CorleyLorenz1998_HFI",
+  "matlab_release": "2024b",
+  "format_files": [
+    "CorleyLorenz1998_HFI.slx",
+    "CorleyLorenz1998_HFI.sldd"
+  ],
+  "isolated_run": true,
+  "cases": {
+    "standstill": {
+      "case_name": "standstill",
+      "runtime_seconds": 12.3975695,
+      "max_abs_trace_error": 0
+    },
+    "injection_off": {
+      "case_name": "injection_off",
+      "runtime_seconds": 1.9742776,
+      "max_abs_trace_error": 0
+    },
+    "current_noise": {
+      "case_name": "current_noise",
+      "runtime_seconds": 1.1289862,
+      "max_abs_trace_error": 0
+    },
+    "low_speed": {
+      "case_name": "low_speed",
+      "runtime_seconds": 1.1586698,
+      "max_abs_trace_error": 0
+    },
+    "high_speed": {
+      "case_name": "high_speed",
+      "runtime_seconds": 1.1932543,
+      "max_abs_trace_error": 0
+    },
+    "high_without_d_feedforward": {
+      "case_name": "high_without_d_feedforward",
+      "runtime_seconds": 1.088557,
+      "max_abs_trace_error": 0
+    },
+    "opposite_polarity": {
+      "case_name": "opposite_polarity",
+      "runtime_seconds": 0.9462359,
+      "max_abs_trace_error": 0
+    }
+  }
+}

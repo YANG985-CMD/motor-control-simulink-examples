@@ -1,0 +1,15 @@
+{
+  "model": "Chen2003_ExtendedEMF",
+  "matlab_release": "2024b",
+  "format_files": [
+    "Chen2003_ExtendedEMF.slx"
+  ],
+  "isolated_run": true,
+  "cases": {
+    "default": {
+      "case_name": "default",
+      "runtime_seconds": 12.3580193,
+      "max_abs_trace_error": 0
+    }
+  }
+}
