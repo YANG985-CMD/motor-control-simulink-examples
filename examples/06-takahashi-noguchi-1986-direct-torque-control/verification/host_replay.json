@@ -1,0 +1,31 @@
+{
+  "model": "Takahashi_DTC_Controller",
+  "compiler": "GCC (MinGW-w64)",
+  "records": [
+    {
+      "samples": 24801,
+      "max_abs_per_output": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "samples": 24801,
+      "max_abs_per_output": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "passed": true
+}

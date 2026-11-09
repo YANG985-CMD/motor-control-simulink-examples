@@ -1,0 +1,1 @@
+{"base_rms":21.772185027092043,"eemf_rms":0.032628856861037253,"base_transient_rms":20.432039096479144,"eemf_transient_rms":0.027024020984093951,"base_initial_rms":3.8434119100531361,"eemf_initial_rms":0.025204284659620747,"speed_electrical_rad_s":320,"sampling_us":50,"steady_window_s":[0.37,0.5],"transient_window_s":[0.2,0.28]}
